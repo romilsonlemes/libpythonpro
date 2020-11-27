@@ -5,7 +5,7 @@ Neste curso é ensinado como contribuir com projetos de código aberto.
 
 Link do curso [Python Pro](https://python.pro.br)
 
-Configuração do Travis-ci
+Configuração do Travis-ci 
 [![Build Status](https://travis-ci.com/romilsonlemes/libpythonpro.svg?branch=master)](https://travis-ci.com/romilsonlemes/libpythonpro)
 
 
