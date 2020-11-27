@@ -8,6 +8,12 @@ Link do curso [Python Pro](https://python.pro.br)
 Configuração do Travis-ci 
 [![Build Status](https://travis-ci.com/romilsonlemes/libpythonpro.svg?branch=master)](https://travis-ci.com/romilsonlemes/libpythonpro)
 
+Configuração de Integração com o Pyup
+[![Updates](https://pyup.io/repos/github/romilsonlemes/libpythonpro/shield.svg)](https://pyup.io/repos/github/romilsonlemes/libpythonpro/)
+
+Configuração de Integração do Pyup com o Python 3
+[![Python 3](https://pyup.io/repos/github/romilsonlemes/libpythonpro/python-3-shield.svg)](https://pyup.io/repos/github/romilsonlemes/libpythonpro/)
+
 
 Esta aplicação suporta a versão 3.8.5 do Python
 
