@@ -25,12 +25,13 @@ standard_exclude_directories = [
 # you can't import this from another package, when you don't know if
 # that package is installed yet.
 def find_package_data(
-    where=".",
-    package="",
-    exclude=standard_exclude,
-    exclude_directories=standard_exclude_directories,
-    only_in_packages=True,
-    show_ignored=False):
+        where=".",
+        package="",
+        exclude=standard_exclude,
+        exclude_directories=standard_exclude_directories,
+        only_in_packages=True,
+        show_ignored=False):
+
     """
     Return a dictionary suitable for use in ``package_data``
     in a distutils ``setup.py`` file.
@@ -66,8 +67,7 @@ def find_package_data(
             if os.path.isdir(fn):
                 bad_name = False
                 for pattern in exclude_directories:
-                    if (fnmatchcase(name, pattern)
-                        or fn.lower() == pattern.lower()):
+                    if (fnmatchcase(name, pattern) or fn.lower() == pattern.lower()):
                         bad_name = True
                         if show_ignored:
                             print >> sys.stderr, (
@@ -76,21 +76,19 @@ def find_package_data(
                         break
                 if bad_name:
                     continue
-                if (os.path.isfile(os.path.join(fn, "__init__.py"))
-                    and not prefix):
+                if (os.path.isfile(os.path.join(fn, "__init__.py")) and not prefix):
                     if not package:
                         new_package = name
                     else:
                         new_package = package + "." + name
-                    stack.append((fn, "", new_package, False))
+                        stack.append((fn, "", new_package, False))
                 else:
                     stack.append((fn, prefix + name + "/", package, only_in_packages))
             elif package or not only_in_packages:
                 # is a file
                 bad_name = False
                 for pattern in exclude:
-                    if (fnmatchcase(name, pattern)
-                        or fn.lower() == pattern.lower()):
+                    if (fnmatchcase(name, pattern) or fn.lower() == pattern.lower()):
                         bad_name = True
                         if show_ignored:
                             print >> sys.stderr, (
@@ -102,11 +100,13 @@ def find_package_data(
                 out.setdefault(package, []).append(prefix+name)
     return out
 
+
 """"
-Configuração do Projeto libpythonPro configurado por Romilson Lemes como forma de estudo da 
-linguagem python através da ajuda do Renzo Nuccitelli e leituras no livro Python Fluente 
+Configuração do Projeto libpythonPro configurado por Romilson Lemes como forma de estudo da
+linguagem python através da ajuda do Renzo Nuccitelli e leituras no livro Python Fluente
 da 1a Edição de 2015 lançado em Outubro pelo autor: Luciano Ramalho.
 """
+
 PACKAGE = "libpythonpro"
 NAME = PACKAGE
 DESCRIPTION = "Módulo para exemplificar a construção de projetos Python no curso Pytools"
