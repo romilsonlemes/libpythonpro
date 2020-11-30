@@ -14,6 +14,9 @@ Configuração de Integração com o Pyup
 Configuração de Integração do Pyup com o Python 3
 [![Python 3](https://pyup.io/repos/github/romilsonlemes/libpythonpro/python-3-shield.svg)](https://pyup.io/repos/github/romilsonlemes/libpythonpro/)
 
+Configuração do CODECOV
+[![codecov](https://codecov.io/gh/romilsonlemes/libpythonpro/branch/master/graph/badge.svg?token=RJTLLI6938)](https://codecov.io/gh/romilsonlemes/libpythonpro)
+
 
 Esta aplicação suporta a versão 3.8.5 do Python
 
