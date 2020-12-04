@@ -6,5 +6,5 @@ class Enviador:
 
 
 class EmailEnvalido(Exception):
-    print('Foi Encontrato um email invalido ao tentar enviar')
+    print('Foi Encontrado um email invalido ao tentar enviar!!')
     pass
