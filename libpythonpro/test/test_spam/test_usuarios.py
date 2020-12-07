@@ -3,7 +3,7 @@ from libpythonpro.spam.db import Conexao
 from libpythonpro.spam.modelos import Usuario
 
 
-@pytest.fixture
+@pytest.fixture(scope='module')
 def conexao():
     """ Setup """
     conexao_obj = Conexao()
@@ -22,6 +22,7 @@ def sessao(conexao):
 
 def test_salvar_usuario(sessao):
     usuario = Usuario(nome='Romilson')
+    print("Executa a Sessão !!")
     sessao.salvar(usuario)
     assert isinstance(usuario.id, int)
 
