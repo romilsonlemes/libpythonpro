@@ -31,7 +31,7 @@ Para Instalar:
 
 Para conferir a qualidade do código:
  ```
-    flaske8
+    flake8
 ```
 
 
