@@ -27,7 +27,7 @@ def test_qde_de_spam(sessao, usuarios):
     enviador_de_spam.enviar_emails(
         'romilsonlemes@gmail.com',
         'Curso Python Pro',
-        'Confira os módulos Fantásticos'i
+        'Confira os módulos Fantásticos'
     )
     assert len(usuarios) == enviador.enviar.call_count
 
