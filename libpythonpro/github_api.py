@@ -12,9 +12,5 @@ def buscar_avatar(usuario):
     """
     retorno = 'Link do Linkedin: \n' + resp.json()['bio'] + '\nFoto de Perfil:\n ' + resp.json()['avatar_url']
     """
-    retorno = 'Foto de Perfil:\n ' + resp.json()['avatar_url']
+    retorno = resp.json()['avatar_url']
     return retorno
-
-
-if __name__ == '__main__':
-    print(buscar_avatar('romilsonlemes'))
